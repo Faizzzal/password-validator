@@ -58,5 +58,28 @@ def digit_check(password):
 def special_character_check(password):
     return password.count("!@#$%^&*()_-~") >= 3
 
-def check():
-    return none
+def if_username(username, password):
+    if username in password:
+        return False
+    return True
+
+def check_consecutive(password):
+    consecutive_count = 1
+    for i in range(1, len(password)):
+        if password[i] == password[i-1]:
+            consecutive_count += 1
+            if consecutive_count == 5:
+                return False
+        else:
+            consecutive_count = 1
+    return True
+
+def valid_username(username):
+    while username == "" or " " in username:
+        if username == "":
+            print("Username Cannot Be Empty !")
+        else:
+            print("Username Cannot contain Spaces !")
+        username = input("Please Enter a valid Username: ")
+    return username
+
