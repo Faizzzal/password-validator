@@ -57,3 +57,6 @@ def digit_check(password):
 
 def special_character_check(password):
     return password.count("!@#$%^&*()_-~") >= 3
+
+def check():
+    return none
