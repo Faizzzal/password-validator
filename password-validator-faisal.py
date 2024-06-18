@@ -11,7 +11,7 @@
    - Should not contain the username
    - Should not have 3 same special characters consecutively
    - Special characters should  be " !, @, $, #, &, %, ^, *, (,), _ , - and ~ " 
-   
+
 '''
 
 def login_user():
@@ -83,3 +83,4 @@ def valid_username(username):
         username = input("Please Enter a valid Username: ")
     return username
 
+def 
